@@ -1,0 +1,69 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    background-color: #fdf6f0; /* Color de fondo suave */
+    text-align: center;
+    padding: 20px;
+}
+
+.config {
+    margin-bottom: 20px;
+    background-color: #ffebee; /* Fondo suave para el formulario */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#imagenes img {
+    width: 100px; /* Tamaño reducido de las imágenes */
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Animación suave al pasar el ratón */
+}
+
+#imagenes img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.tarjeta {
+    border: 2px solid #ff80ab; /* Borde de color tierno */
+    padding: 20px;
+    width: 320px; /* Un poco más ancho para mayor comodidad */
+    margin: 20px auto; /* Margen superior para separación */
+    background-color: #fff9c4; /* Fondo suave para la tarjeta */
+    display: block;
+    min-height: 250px; /* Aumento de la altura mínima */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.tarjeta img {
+    max-width: 100%;
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+#crear {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ff6f61; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+#crear:hover {
+    background-color: #ff4a3b; /* Color más oscuro al pasar el ratón */
+}
+
+.config select,
+.config input[type="text"], 
+.config input[type="number"] {
+    margin: 10px 0;
+    padding: 10px; /* Aumento del padding */
+    border: 2px solid #ff80ab; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    width: calc(100% - 24px); /* Ancho completo menos padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

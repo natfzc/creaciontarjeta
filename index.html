@@ -1,0 +1,64 @@
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Creador de Tarjetas</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <h1>Crea tu tarjeta</h1>
+        
+            <div class="config">
+                <label for="tipo">Elige el tipo de felicitación:</label>
+                <select id="tipo">
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="san-valentin">San Valentín</option>
+                    <option value="halloween">Halloween</option>
+                </select>
+        
+                
+                <label for="imagen">Elige una imagen:</label>
+                <div id="imagenes">
+                    <!-- Aquí se cargarán las imágenes dinámicamente -->
+                </div>
+        
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre">
+        
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje">
+        
+                <label for="color-fondo">Elige el color de fondo:</label>
+                <input type="color" id="color-fondo">
+            </div>
+
+            <label for="tipo-letra">Elige el tipo de letra:</label>
+            <select id="tipo-letra">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            
+            <label for="tamaño-letra">Elige el tamaño de letra:</label>
+            <input type="number" id="tamaño-letra" value="16">
+            
+            <label for="color-letra">Elige el color de la letra:</label>
+            <input type="color" id="color-letra">
+            
+
+        
+            <button id="crear">Crear tarjeta</button>
+        
+            <div id="resultado" class="tarjeta">
+                <h2 id="titulo"></h2>
+                <img id="imagen-seleccionada" src="" alt="Imagen seleccionada">
+                <p id="texto"></p>
+                <p id="autor"></p>
+            </div>
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
+        
